@@ -44,6 +44,6 @@ func BooksHandleFunc(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		panic(err)
 	}
-	w.Header().Add("Content-Type", "aplication/json; charset=utf-8")
+	w.Header().Add("Content-Type", "application/json; charset=utf-8")
 	w.Write(b)
 }
